@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +8,15 @@
 }
 footer{
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     background-color: #1976d2;
     color: white;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
+    margin-top: 20px;
 }
 .row{
     width: 85%;
@@ -36,7 +39,7 @@ footer{
 }
 .col h3{
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     position: relative;
 }
 ul li{

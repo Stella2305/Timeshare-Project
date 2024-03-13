@@ -1,0 +1,109 @@
+:root{
+    --PrimaryColor: #1976d2;
+    --HoverColor: #16599c;
+    --WhiteColor: white;
+    --blackColor: black;
+    --greyBg: hsl(0,0%,96%);
+    --greyText: rgb(190,190,190);
+    --inputColor: hsl(330,12%,97%);
+}
+.seachBar{
+    height: 70vh;
+    /* background: linear-gradient(rgba(33,33,33,0.522), rgba(33,33,33,0,522), url('/public/assets/background2.jpg')); */
+    background-image: url('/public/assets/Images/background4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 80px;
+}
+.setContainer .homeText{
+    text-align: center;
+}
+.title{
+    color: var(--WhiteColor);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.subTitle{
+    color: var(--WhiteColor);
+    opacity: .9;
+    font-size: 15px;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.searchDiv{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 10px;
+}
+.btn{
+    padding: .4rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background: var(--PrimaryColor);
+    cursor: pointer;
+    /* transform: opacity .15s; */
+}
+.btn a{
+    color: var(--WhiteColor);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: .8;
+}
+.btn:active{
+    opacity: .6;
+}
+
+.homeCard{
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--WhiteColor);
+    border: 1px solid rgb(165, 165, 165);
+    position: absolute;
+    gap: 1rem;
+    justify-content: center;
+    bottom: -10%;
+    transform: translate(-50%);
+    left: 50%;
+    box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+}
+.searchDiv{
+    width: 100%;
+}
+label{
+    display: block;
+    color: lightslategray;
+    size: 13px;
+}
+input{
+    width: 100%;
+    background: var(--inputColor);
+    border-radius: 10px;
+    border: 1px solid rgba(165, 165, 165, 0.6);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+input ::placeholder{
+    font-size: 13px;
+    opacity: -5;
+    font-weight: 400;
+}
+.searchInput:focus{
+    outline: 1px solid #1976d2d3;
+}

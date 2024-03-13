@@ -42,7 +42,7 @@ export default function NavBar() {
   };
 
   return (
-    <div style={{marginBottom:80}}>
+    <div style={{marginBottom:64}}>
       <header>
         <AppBar position="fixed" >
           <Container maxWidth="xl">
