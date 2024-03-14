@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const pages = ['Home'];
 const pagesLink = ['/'];
@@ -25,6 +25,7 @@ const settingsLink = ['/login', '/register'];
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const nav = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,6 +41,14 @@ export default function NavBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const linkLogin = ()=>{
+    nav(`/login`);
+  }
+
+  const linkRegister = ()=>{
+    nav(`/register`);
+  }
 
   return (
     <div style={{marginBottom:64}}>
@@ -122,7 +131,7 @@ export default function NavBar() {
                 ))}
               </Box>
 
-              <Box sx={{ flexGrow: 0 }}>
+              {/* <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Open settings">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -153,7 +162,17 @@ export default function NavBar() {
                     </MenuItem>
                   ))}
                 </Menu>
-              </Box>
+              </Box> */}
+              <button className='btn transparent' 
+                      style={{margin: '0 10px'}}
+                      onClick={linkRegister}>
+                Register
+              </button>
+              <button className='btn transparent' 
+                      style={{margin: '0 10px'}}
+                      onClick={linkLogin}>
+                Log in
+              </button>
             </Toolbar>
           </Container>
         </AppBar>
