@@ -15,14 +15,28 @@
 body{
     background-color: var(--greyBg);
 }
-.listContainer{
+.searchContainer{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+}
+.listContainer{
+    display: flex;
+    max-width: 1280px;
+    margin-top: 10px;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+}
+.header{
+    flex: 1;
+    padding: 1rem;
+    max-width: 1280px;
+    /* align-items: center; */
+    
 }
 .listWrapper{
     width: 100%;
-    max-width: 1280px;
     display: flex;
     justify-content: center;
     gap: 20px;
