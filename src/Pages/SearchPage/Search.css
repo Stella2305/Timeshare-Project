@@ -1,0 +1,77 @@
+:root{
+    --PrimaryColor: #1976d2;
+    --HoverColor: #16599c;
+    --WhiteColor: white;
+    --blackColor: black;
+    --greyBg: hsl(0, 0%, 90%);
+    --greyText: rgb(190,190,190);
+    --inputColor: hsl(330,12%,97%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--greyBg);
+}
+.listContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.listWrapper{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    margin: 0 1rem;
+}
+.listSearch{
+   flex: 1.2; 
+   background-color: var(--WhiteColor);
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+   position: sticky;
+   top: 120px;
+   /* box-shadow: 0 0 10px rgba(225, 225, 225, 0.5); */
+   box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+   height: max-content;
+}
+.lsTitle{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+.listResult{
+    flex: 3;
+    /* background-color: lightcoral; */
+}
+.lsItem{
+    margin: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lsItem input{
+    width: 100%;
+    background: var(--WhiteColor);
+    border: 1px solid rgba(165, 165, 165, 0.6);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 0;
+    border-radius: 0;
+}
+.lsItem input ::placeholder{
+    font-size: 13px;
+    opacity: -5;
+    font-weight: 400;
+}
+.lsItem input:focus{
+    outline: 1px solid #1976d2d3;
+}

@@ -1,0 +1,77 @@
+:root{
+    --PrimaryColor: #1976d2;
+    --HoverColor: #16599c;
+    --WhiteColor: white;
+    --blackColor: black;
+    --greyBg: hsl(0,0%,96%);
+    --greyText: rgb(190,190,190);
+    --inputColor: hsl(330,12%,97%);
+}
+.timeshareBar{
+    background-color: var(--WhiteColor);
+    border: 1px solid lightgray;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+}
+.tbImg{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.tbDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+.tbId{
+    font-size: 20px;
+    color:rgb(180, 0, 0);
+}
+.tbTitle{
+    font-size: 20px;
+    color:var(--PrimaryColor);
+}
+.tblocation{
+    font-size: 16px;
+    color: gray;
+}
+.tbFeatures{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+.icon, .text{
+    vertical-align: middle;
+    /* color: gray; */
+}
+.text{
+    margin-right: 15px;
+}
+.tbDetails{
+    flex: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tbPrice{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 1.2rem;
+}
+.tbPrice>span{
+    font-weight: 600;
+    font-size: 23px;
+}
+.tbBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -24,7 +24,7 @@
 .setContainer .homeText{
     text-align: center;
 }
-.title{
+.titlePage{
     color: var(--WhiteColor);
     font-size: 2rem;
     font-weight: 700;

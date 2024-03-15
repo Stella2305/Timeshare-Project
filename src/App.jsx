@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar/NavBar.jsx'
 import Home from './Pages/HomePage/Home.jsx'
-import Footer from './Components/Footer/Footer.jsx';
-import SearchBar from './Components/SearchBar/SearchBar.jsx';
 import Login from './Pages/LoginPage/Login.jsx';
 import Register from './Pages/RegisterPage/Register.jsx';
+import Search from './Pages/SearchPage/Search.jsx';
+import Detail from './Pages/DetailPage/Detail.jsx';
 
 function App() {
   
@@ -18,6 +17,8 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
+          <Route path='/search' element={<Search/>}/>
+          <Route path='/search/detail' element={<Detail/>}/>
         </Routes>
       </BrowserRouter>
     </>
